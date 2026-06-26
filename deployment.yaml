@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: vibe-01
+  name: vibe-01
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vibe-01
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: vibe-01
+    spec:
+      containers:
+      - image: jumpboxacademy/vibe-01
+        name: vibe-01
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
