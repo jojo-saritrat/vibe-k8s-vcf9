@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vibe-01
+  name: vibe-01-vcf9
 spec:
   template:
     spec:
       containers:
-      - name: vibe-01 
+      - name: vibe-01-vcf9
         securityContext:
           allowPrivilegeEscalation: false
           capabilities:
