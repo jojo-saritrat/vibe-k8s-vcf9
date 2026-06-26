@@ -2,13 +2,13 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: vibe-01
-  name: vibe-01
+    app: vibe-01-vcf9
+  name: vibe-01-vcf9
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: vibe-01
+      app: vibe-01-vcf9
   strategy: {}
   template:
     metadata:
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - image: jumpboxacademy/vibe-01-vcf9
-        name: vibe-01
+        name: vibe-01-vcf9
         ports:
         - containerPort: 80
         resources: {}
