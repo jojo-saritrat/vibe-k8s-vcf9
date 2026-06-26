@@ -13,7 +13,7 @@ spec:
   template:
     metadata:
       labels:
-        app: vibe-01
+        app: vibe-01-vcf9
     spec:
       containers:
       - image: jumpboxacademy/vibe-01-vcf9
