@@ -8,11 +8,16 @@ spec:
       containers:
       - name: vibe-01-vcf9
         securityContext:
-          allowPrivilegeEscalation: false
-          capabilities:
-            drop:
-            - ALL
-          runAsNonRoot: true
-          runAsUser: 1000
+          privileged: true
+          runAsNonRoot: false
+          runAsUser: 0
           seccompProfile:
-            type: RuntimeDefault
+            type: Unconfined
+          # allowPrivilegeEscalation: false
+          # capabilities:
+          #   drop:
+          #   - ALL
+          # runAsNonRoot: true
+          # runAsUser: 1000
+          # seccompProfile:
+          #   type: RuntimeDefault
