@@ -16,7 +16,7 @@ spec:
         app: vibe-01
     spec:
       containers:
-      - image: jumpboxacademy/vibe-01
+      - image: jumpboxacademy/vibe-01-vcf9
         name: vibe-01
         ports:
         - containerPort: 80
